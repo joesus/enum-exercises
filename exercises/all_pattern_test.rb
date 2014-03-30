@@ -17,7 +17,7 @@ class AllPatternTest < Minitest::Test
     numbers = [0, 0, 0, 0, 1, 0, 0, 0]
     all_zeros = true
     numbers.each do |number|
-      # Your code goes here
+      all_zeros = false if number != 0
     end
     refute all_zeros
   end
