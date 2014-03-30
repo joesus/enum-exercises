@@ -5,6 +5,7 @@ require 'minitest/pride'
 class CountTest < Minitest::Test
 
   def test_count_count_words_with_e
+    skip
     words = ["thing", "phone", "bark", "belt", "shoe", "bath"]
     tally = words.count do |word|
       word.include?('e')
@@ -13,6 +14,7 @@ class CountTest < Minitest::Test
   end
 
   def test_count_numbers_greater_than_17
+    skip
     numbers = [9, 18, 12, 17, 1, 3, 99]
     tally = numbers.count do |number|
       # Your code goes here

@@ -5,6 +5,7 @@ require 'minitest/pride'
 class OnePatternTest < Minitest::Test
 
   def test_one_more
+    skip
     words = ["bigger", "better", "more", "improved", "advantageous"]
     count = 0
     words.each do |word|
@@ -15,6 +16,7 @@ class OnePatternTest < Minitest::Test
   end
 
   def test_not_even_one_ring
+    skip
     ornaments = ["bracelet", "anklet", "earring"]
     count = 0
     ornaments.each do |ornament|

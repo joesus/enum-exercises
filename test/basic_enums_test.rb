@@ -4,6 +4,7 @@ require 'minitest/pride'
 
 class BasicEnumsTest < Minitest::Test
   def test_solve_for_x
+    skip
     s = ''
     5.times do
       # write code here

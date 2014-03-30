@@ -8,6 +8,7 @@ require_relative 'objects/squid'
 
 class BonusQuestionsTest < Minitest::Test
   def test_7_factorial
+    skip
     # Example: "Five factorial", written 5!, is
     # 1 * 2 * 3 * 4 * 5
     product = 1

@@ -5,6 +5,7 @@ require 'minitest/pride'
 class FindPatternTest < Minitest::Test
 
   def test_find_first_seven_letter_word
+    skip
     words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
     found = nil
     words.each do |word|
@@ -17,6 +18,7 @@ class FindPatternTest < Minitest::Test
   end
 
   def test_no_waldo
+    skip
     words = ["scarf", "sandcastle", "flag", "pretzel", "crow", "key"]
     found = nil
     words.each do |word|

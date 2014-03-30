@@ -5,6 +5,7 @@ require 'minitest/pride'
 class RejectTest < Minitest::Test
 
   def test_remove_zeros
+    skip
     numbers = [2, 93, 7, 0, 0, 1, 0, 31, 0, 368]
     filtered = numbers.reject do |number|
       number.zero?
@@ -13,6 +14,7 @@ class RejectTest < Minitest::Test
   end
 
   def test_remove_vowels
+    skip
     letters = ["a", "l", "l", " ", "y", "o", "u", "r", " ", "b", "a", "s", "e", " ", "a", "r", "e", " ", "b", "e", "l", "o", "n", "g", " ", "t", "o", " ", "u", "s"]
     remaining = letters.reject do |letter|
       # Your code goes here

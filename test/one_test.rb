@@ -5,6 +5,7 @@ require 'minitest/pride'
 class OneTest < Minitest::Test
 
   def test_one_more
+    skip
     words = ["bigger", "better", "more", "improved", "advantageous"]
     exactly_one = words.one? do |word|
       word == 'more'
@@ -13,6 +14,7 @@ class OneTest < Minitest::Test
   end
 
   def test_not_even_one_ring
+    skip
     ornaments = ["bracelet", "anklet", "earring"]
     exactly_one_ring = ornaments.one? do |ornament|
       # Your code goes here

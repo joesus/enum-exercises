@@ -5,6 +5,7 @@ require 'minitest/pride'
 class SortByPatternTest < Minitest::Test
 
   def test_sort_alphabetically
+    skip
     words = ["broccoli", "Carrots", "FISH", "Bacon", "candy"]
     transformed = []
     words.each do |word|
@@ -19,6 +20,7 @@ class SortByPatternTest < Minitest::Test
   end
 
   def test_sort_alphabetically_by_last_letter
+    skip
     things = ["pill", "box", "glass", "water", "sponge"]
     transformed = []
     things.each do |thing|

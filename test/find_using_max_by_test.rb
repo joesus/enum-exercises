@@ -5,6 +5,7 @@ require 'minitest/pride'
 class FindUsingMaxByTest < Minitest::Test
   # You get the first test for free... it's already passing.
   def test_longest_word
+    skip
     words = ["apple", "banana", "cherry", "date", "eggplant"]
 
     found_word = words.max_by do |word|

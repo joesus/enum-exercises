@@ -5,6 +5,7 @@ require 'minitest/pride'
 class ReduceTest < Minitest::Test
 
   def test_sum_a_list_of_numbers
+    skip
     numbers = [32, 1, 21, 5, 81, 333]
     result = numbers.reduce(0) do |sum, number|
       sum + number
@@ -13,6 +14,7 @@ class ReduceTest < Minitest::Test
   end
 
   def test_subtract_list_of_numbers
+    skip
     numbers = [28, 12, 38, 1, 91]
     result = numbers.reduce(0) do |difference, number|
       # Your code goes here

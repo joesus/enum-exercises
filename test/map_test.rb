@@ -5,6 +5,7 @@ require 'minitest/pride'
 class MapTest < Minitest::Test
 
   def test_capitalize
+    skip
     names = ["alice", "bob", "charlie"]
     capitalized_names = names.map do |name|
       name.capitalize
@@ -13,6 +14,7 @@ class MapTest < Minitest::Test
   end
 
   def test_doubles
+    skip
     numbers = [1, 2, 3, 4, 5]
     doubles = numbers.map do |number|
       # Your code goes here

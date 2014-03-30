@@ -5,6 +5,7 @@ require 'minitest/pride'
 class AnyTest < Minitest::Test
 
   def test_has_at_least_one_zero
+    skip
     numbers = [2, 0, 9, 3, 0, 1]
     has_zero = numbers.any? do |number|
       number.zero?
@@ -13,6 +14,7 @@ class AnyTest < Minitest::Test
   end
 
   def test_does_not_have_any_zeros
+    skip
     numbers = [3, 1, 3, 2, 4, 9, 8]
     has_zero = numbers.any? do |number|
       # Your code goes here

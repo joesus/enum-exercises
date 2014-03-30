@@ -5,6 +5,7 @@ require 'minitest/pride'
 class NoneTest < Minitest::Test
 
   def test_none_are_broken
+    skip
     things = ["functional", "working", "works", "fixed", "good"]
     none_broken = things.none? do |thing|
       thing == "broken"
@@ -13,6 +14,7 @@ class NoneTest < Minitest::Test
   end
 
   def test_double_negative
+    skip
     numbers = [9, 3, 3, 7, 6, -5, 1]
     not_none_negative = numbers.none? do |number|
       # Your code goes here

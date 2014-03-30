@@ -5,6 +5,7 @@ require 'minitest/pride'
 class AllPatternTest < Minitest::Test
 
   def test_all_zeros
+    
     numbers = [0, 0, 0, 0, 0, 0, 0]
     all_zeros = true
     numbers.each do |number|
@@ -14,6 +15,7 @@ class AllPatternTest < Minitest::Test
   end
 
   def test_not_all_zeros
+    skip
     numbers = [0, 0, 0, 0, 1, 0, 0, 0]
     all_zeros = true
     numbers.each do |number|

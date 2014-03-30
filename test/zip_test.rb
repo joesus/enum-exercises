@@ -5,6 +5,7 @@ require 'minitest/pride'
 class ZipTest < Minitest::Test
 
   def test_speed_interview_pairs
+    skip
     list1 = ["Alice", "Bob", "Charlie"]
     list2 = ["Xenia", "Yves", "Zach"]
     pairs = list1.zip(list2)
@@ -12,6 +13,7 @@ class ZipTest < Minitest::Test
   end
 
   def test_menu
+    skip
     list1 = ["NY Strip Steak", "Lamb Stew", "Grilled Salmon"]
     list2 = [29, 23, 26]
     # Your code goes here

@@ -5,6 +5,7 @@ require 'minitest/pride'
 class SortByTest < Minitest::Test
 
   def test_sort_alphabetically
+    skip
     words = ["broccoli", "Carrots", "FISH", "Bacon", "candy"]
     sorted = words.sort_by do |word|
       word.downcase
@@ -13,6 +14,7 @@ class SortByTest < Minitest::Test
   end
 
   def test_sort_alphabetically_by_last_letter
+    skip
     things = ["pill", "box", "glass", "water", "sponge"]
     sorted = things.sort_by do |thing|
       # Your code goes here

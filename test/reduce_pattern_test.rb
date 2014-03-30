@@ -5,6 +5,7 @@ require 'minitest/pride'
 class ReducePatternTest < Minitest::Test
 
   def test_sum_a_list_of_numbers
+    skip
     numbers = [32, 1, 21, 5, 81, 333]
     sum = 0
     numbers.each do |number|
@@ -14,6 +15,7 @@ class ReducePatternTest < Minitest::Test
   end
 
   def test_subtract_list_of_numbers
+    skip
     numbers = [28, 12, 38, 1, 91]
     difference = 0
     numbers.each do |number|

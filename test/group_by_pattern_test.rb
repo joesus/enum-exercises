@@ -5,6 +5,7 @@ require 'minitest/pride'
 class GroupByPatternTest < Minitest::Test
 
   def test_group_words_by_length
+    skip
     words = ["sue", "alice", "steve", "sally", "adam", "fort", "tops", "dog", "cat"]
     grouped = Hash.new {|hash, key| hash[key] = []}
     words.each do |word|
@@ -15,6 +16,7 @@ class GroupByPatternTest < Minitest::Test
   end
 
   def test_group_numbers_by_odd_and_even
+    skip
     numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
     odd_and_even = Hash.new {|hash, key| hash[key] = []}
     numbers.each do |number|

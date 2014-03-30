@@ -5,6 +5,7 @@ require 'minitest/pride'
 class FindTest < Minitest::Test
 
   def test_find_first_seven_letter_word
+    skip
     words = ["capricious", "berry", "unicorn", "bag", "apple", "festering", "pretzel", "pencil"]
     found = words.find do |word|
       word.length == 7
@@ -13,6 +14,7 @@ class FindTest < Minitest::Test
   end
 
   def test_no_waldo
+    skip
     words = ["scarf", "sandcastle", "flag", "pretzel", "crow", "key"]
     found = words.find do |word|
       # Your code goes here

@@ -5,6 +5,7 @@ require 'minitest/pride'
 class GroupByTest < Minitest::Test
 
   def test_group_words_by_length
+    skip
     words = ["sue", "alice", "steve", "sally", "adam", "fort", "tops", "dog", "cat"]
     grouped = words.group_by do |word|
       word.length
@@ -14,6 +15,7 @@ class GroupByTest < Minitest::Test
   end
 
   def test_group_numbers_by_odd_and_even
+    skip
     numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
     odd_and_even = numbers.group_by do |number|
       # Your code goes here

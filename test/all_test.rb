@@ -5,6 +5,7 @@ require 'minitest/pride'
 class AllTest < Minitest::Test
 
   def test_all_zeros
+    skip
     numbers = [0, 0, 0, 0, 0, 0, 0]
     all_zeros = numbers.all? do |number|
       number.zero?
@@ -13,6 +14,7 @@ class AllTest < Minitest::Test
   end
 
   def test_not_all_zeros
+    skip
     numbers = [0, 0, 0, 0, 1, 0, 0, 0]
     all_zeros = numbers.all? do |number|
       # Your code goes here
