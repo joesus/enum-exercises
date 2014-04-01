@@ -30,7 +30,6 @@ class AnyPatternTest < Minitest::Test
   end
 
   def test_no_alices
-    skip
     names = ["Chuck", "Charlene", "Cory", "Chris", "Carl"]
     names.include?("Alice") ? has_alice = true : false
     refute has_alice
